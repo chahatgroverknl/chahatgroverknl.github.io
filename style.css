@@ -329,3 +329,4 @@ figcaption { font-size: 13px; line-height: 1.4; padding-top: 8px; color: var(--m
 .p-next-link span { display: block; margin-bottom: 10px; font-size: 15px; font-weight: 400; letter-spacing: 0; color: var(--muted); font-variation-settings: "wdth" 100; }
 .p-next-link:hover { font-variation-settings: "wdth" 125; }
 .js .project.is-open { padding-top: clamp(20px, 3vw, 40px); }
+.card img.on-white { object-fit: contain; background: #fff; }
