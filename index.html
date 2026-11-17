@@ -8,6 +8,7 @@
 <meta property="og:title" content="Chahat Grover — Space & Interior Design">
 <meta property="og:description" content="Calm, purposeful spaces shaped by form, material and light.">
 <meta property="og:image" content="img/mr-bed.jpg">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
@@ -27,38 +28,43 @@
 
 <main id="top">
 
-<!-- ============ INTRO ============ -->
-<section class="intro" data-room="limestone">
+<!-- ============ HOME: intro + project grid ============ -->
+<section class="intro home-only" data-room="limestone">
   <h1 class="name" aria-label="Chahat Grover">
     <span class="name-line">Chahat</span>
     <span class="name-line name-line--right">Grover</span>
   </h1>
 
-  <div class="intro-grid" id="work">
-    <div class="intro-text">
-      <p class="lede">Space &amp; interior design student at The Design Village, Noida.</p>
-      <p>I design rooms that are calm, purposeful and easy to live in. My work starts with how a space should feel, then works out the forms, materials and light that get it there.</p>
-    </div>
-
-    <ol class="index" aria-label="Projects">
-      <li><a href="#home" data-preview="img/mr-bed.jpg"><span class="index-title">A Home, Reconsidered</span><span class="index-kind">Residential interiors</span></a></li>
-      <li><a href="#dzud" data-preview="img/dz-final.jpg"><span class="index-title">Dzud</span><span class="index-kind">Pavilion, Mongolia</span></a></li>
-      <li><a href="#workspace" data-preview="img/ws-render.jpg"><span class="index-title">Workspace</span><span class="index-kind">Study room</span></a></li>
-      <li><a href="#crossy" data-preview="img/cl-2.jpg"><span class="index-title">Crossy Light</span><span class="index-kind">PVC chandelier</span></a></li>
-      <li><a href="#meld" data-preview="img/ml-box.jpg"><span class="index-title">Meld</span><span class="index-kind">Flat-pack stool</span></a></li>
-    </ol>
-
-    <figure class="preview" aria-hidden="true">
-      <img src="img/mr-bed.jpg" alt="" width="1173" height="1082">
-    </figure>
+  <div class="intro-text">
+    <p class="lede">Space &amp; interior design student at The Design Village, Noida.</p>
+    <p>I design rooms that are calm, purposeful and easy to live in. My work starts with how a space should feel, then works out the forms, materials and light that get it there.</p>
   </div>
+
+  <ul class="cards" id="work" aria-label="Projects">
+    <li class="card" data-preview-room="stucco">
+      <a href="#a-home"><img src="img/mr-bed.jpg" alt="" width="1171" height="1080" style="object-position:50% 70%"><span class="card-title">A Home, Reconsidered</span><span class="card-kind">Residential interiors</span></a>
+    </li>
+    <li class="card" data-preview-room="snow">
+      <a href="#dzud"><img src="img/dz-final.jpg" alt="" width="1278" height="691"><span class="card-title">Dzud</span><span class="card-kind">Pavilion for Mongolia</span></a>
+    </li>
+    <li class="card" data-preview-room="sage">
+      <a href="#workspace"><img src="img/ws-render.jpg" alt="" width="1241" height="696" loading="lazy"><span class="card-title">Workspace</span><span class="card-kind">Study room</span></a>
+    </li>
+    <li class="card" data-preview-room="cobalt">
+      <a href="#crossy"><img src="img/cl-2.jpg" alt="" width="1049" height="1748" loading="lazy" style="object-position:50% 12%"><span class="card-title">Crossy Light</span><span class="card-kind">PVC chandelier</span></a>
+    </li>
+    <li class="card" data-preview-room="walnut">
+      <a href="#meld"><img src="img/ml-box.jpg" alt="" width="1722" height="884" loading="lazy"><span class="card-title">Meld</span><span class="card-kind">Flat-pack stool</span></a>
+    </li>
+  </ul>
 </section>
 
-<!-- ============ HOME ============ -->
-<section class="project" id="home" data-room="stucco">
+<!-- ============ A HOME, RECONSIDERED ============ -->
+<section class="project" id="a-home" data-room="stucco">
+  <a class="p-back" href="#work">All projects</a>
   <header class="p-head">
     <p class="p-kind">Adaptive design, residential interiors</p>
-    <h2 class="p-title">A Home, Reconsidered</h2>
+    <h2 class="p-title" tabindex="-1">A Home, Reconsidered</h2>
   </header>
 
   <div class="p-body">
@@ -75,53 +81,72 @@
   </div>
 
   <div class="gallery">
-    <figure class="g g-4 g-tall"><img src="img/home-mood.jpg" alt="Late light falling across a plaster wall onto a vase and walnut console" width="575" height="1235" loading="lazy"></figure>
-    <figure class="g g-8 g-paper"><img src="img/home-plans.jpg" alt="Existing floor plans of the ground and first floor" width="2001" height="1885" loading="lazy"><figcaption>Existing plans, ground and first floor</figcaption></figure>
-    <figure class="g g-6 g-paper"><img src="img/home-elev-a.jpg" alt="Four existing elevations: bed wall, wardrobe wall, study unit and window wall" width="2001" height="1671" loading="lazy"><figcaption>Existing elevations of the key rooms</figcaption></figure>
-    <figure class="g g-6 g-paper"><img src="img/home-elev-b.jpg" alt="Four more existing elevations, including a perforated screen wall" width="2001" height="1325" loading="lazy"></figure>
+    <figure class="g g-4"><img src="img/home-mood.jpg" alt="Late light falling across a plaster wall onto a vase and walnut console" width="573" height="1226" loading="lazy"></figure>
+    <figure class="g g-8"><img src="img/home-plans.jpg" alt="Existing floor plans of the ground and first floor" width="2001" height="1885" loading="lazy"><figcaption>Existing plans, ground and first floor</figcaption></figure>
+    <figure class="g g-6"><img src="img/home-elev-a.jpg" alt="Four existing elevations: bed wall, wardrobe wall, study unit and window wall" width="2001" height="1671" loading="lazy"><figcaption>Existing elevations of the key rooms</figcaption></figure>
+    <figure class="g g-6"><img src="img/home-elev-b.jpg" alt="Four more existing elevations, including a perforated screen wall" width="2001" height="1325" loading="lazy"></figure>
   </div>
 
   <h3 class="p-sub">Living room, bedrooms and washroom</h3>
   <div class="gallery">
-    <figure class="g g-7"><img src="img/home-living.jpg" alt="Living room with fluted walnut panels, a low beige sofa and a stone coffee table" width="1143" height="846" loading="lazy"><figcaption>Living room</figcaption></figure>
-    <figure class="g g-5 g-bottom"><img src="img/home-wash.jpg" alt="Two views of a washroom in dark stone with a black basin and walnut door" width="870" height="632" loading="lazy"><figcaption>My washroom</figcaption></figure>
-    <figure class="g g-6"><img src="img/home-gran.jpg" alt="Two views of a soft beige bedroom" width="959" height="331" loading="lazy"><figcaption>Grandmother’s room</figcaption></figure>
-    <figure class="g g-6"><img src="img/home-bed.jpg" alt="Two views of a darker bedroom in charcoal and walnut" width="1086" height="382" loading="lazy"><figcaption>My bedroom</figcaption></figure>
+    <figure class="g g-7"><img src="img/home-living.jpg" alt="Living room with fluted walnut panels, a low beige sofa and a stone coffee table" width="1141" height="844" loading="lazy"><figcaption>Living room</figcaption></figure>
+    <figure class="g g-5 pair">
+      <img src="img/home-wash-1.jpg" alt="Washroom shower wall in dark stone with a black window frame" width="395" height="626" loading="lazy">
+      <img src="img/home-wash-2.jpg" alt="Washroom with a black wall-hung WC and walnut door" width="415" height="626" loading="lazy">
+      <figcaption>My washroom</figcaption>
+    </figure>
+    <figure class="g g-6 pair">
+      <img src="img/home-gran-1.jpg" alt="Grandmother’s room: a soft beige bed in front of tall wardrobes" width="441" height="288" loading="lazy">
+      <img src="img/home-gran-2.jpg" alt="Grandmother’s room seen towards the window" width="483" height="288" loading="lazy">
+      <figcaption>Grandmother’s room</figcaption>
+    </figure>
+    <figure class="g g-6 pair">
+      <img src="img/home-bed-1.jpg" alt="My bedroom in charcoal and walnut, towards the wardrobe" width="519" height="376" loading="lazy">
+      <img src="img/home-bed-2.jpg" alt="My bedroom seen towards the window" width="541" height="376" loading="lazy">
+      <figcaption>My bedroom</figcaption>
+    </figure>
   </div>
 
   <h3 class="p-sub">The master retreat</h3>
   <div class="gallery">
-    <figure class="g g-7 g-span2"><img src="img/mr-bed.jpg" alt="Master bedroom with a backlit wave-carved stucco headboard wall" width="1173" height="1082" loading="lazy"><figcaption>A carved stucco wall, washed with concealed light, replaces the headboard</figcaption></figure>
-    <figure class="g g-5 g-paper"><img src="img/mr-plan.jpg" alt="Plan of the bedroom, dressing room and washroom" width="804" height="441" loading="lazy"><figcaption>Bedroom, dressing room and washroom</figcaption></figure>
-    <figure class="g g-5"><img src="img/mr-tv.jpg" alt="Floating media unit between two vertical wall lights" width="717" height="638" loading="lazy"><figcaption>Media wall</figcaption></figure>
-    <figure class="g g-7"><img src="img/mr-wash.jpg" alt="Washroom with a glowing organic mirror over a floating vanity" width="999" height="927" loading="lazy"><figcaption>Washroom</figcaption></figure>
+    <figure class="g g-7"><img src="img/mr-bed.jpg" alt="Master bedroom with a backlit wave-carved stucco headboard wall" width="1171" height="1080" loading="lazy"><figcaption>A carved stucco wall, washed with concealed light, replaces the headboard</figcaption></figure>
     <div class="g g-5 g-stack">
-      <figure><img src="img/mr-wash2.jpg" alt="Washroom with a lit niche and wall-hung WC" width="537" height="508" loading="lazy"></figure>
-  <div class="swatches swatches--tight" aria-label="Master retreat palette">
-    <p class="swatch-head">Colour and material palette</p>
-    <ul>
-      <li style="--c:#d4c0a8">Warm beige</li>
-      <li style="--c:#c3ab92">Taupe</li>
-      <li style="--c:#6c482c">Wood accent</li>
-      <li style="--c:#cbb4a0">Stucco texture</li>
-      <li style="--c:#9d8875">Warm greige</li>
-      <li style="--c:#45423d">Matte metal</li>
-      <li style="--c:#dfd2c2">Fabric</li>
-    </ul>
-  </div>
+      <figure><img src="img/mr-plan.jpg" alt="Plan of the bedroom, dressing room and washroom" width="802" height="452" loading="lazy"><figcaption>Bedroom, dressing room and washroom</figcaption></figure>
+      <figure><img src="img/mr-tv.jpg" alt="Floating media unit between two vertical wall lights" width="715" height="636" loading="lazy"><figcaption>Media wall</figcaption></figure>
+    </div>
+    <figure class="g g-7"><img src="img/mr-wash.jpg" alt="Washroom with a glowing organic mirror over a floating vanity" width="997" height="925" loading="lazy"><figcaption>Washroom</figcaption></figure>
+    <div class="g g-5 g-stack">
+      <figure><img src="img/mr-wash2.jpg" alt="Washroom with a lit niche and wall-hung WC" width="535" height="506" loading="lazy"></figure>
+      <div class="swatches" aria-label="Master retreat palette">
+        <p class="swatch-head">Colour and material palette</p>
+        <ul>
+          <li style="--c:#d4c0a8">Warm beige</li>
+          <li style="--c:#c3ab92">Taupe</li>
+          <li style="--c:#6c482c">Wood accent</li>
+          <li style="--c:#cbb4a0">Stucco texture</li>
+          <li style="--c:#9d8875">Warm greige</li>
+          <li style="--c:#45423d">Matte metal</li>
+          <li style="--c:#dfd2c2">Fabric</li>
+        </ul>
+      </div>
     </div>
   </div>
 
+  <nav class="p-next" aria-label="More projects">
+    <a href="#work">All projects</a>
+    <a class="p-next-link" href="#dzud"><span>Next project</span>Dzud</a>
+  </nav>
 </section>
 
 <!-- ============ DZUD ============ -->
 <section class="project" id="dzud" data-room="snow">
+  <a class="p-back" href="#work">All projects</a>
   <header class="p-head">
     <p class="p-kind">Pavilion, concept development, spatial experience</p>
-    <h2 class="p-title">Dzud</h2>
+    <h2 class="p-title" tabindex="-1">Dzud</h2>
   </header>
 
-  <figure class="bleed"><img src="img/dz-final.jpg" alt="The pavilion at dusk: timber ribs and a pale membrane rising in two domes against Ulaanbaatar’s skyline" width="1280" height="693" loading="lazy"></figure>
+  <figure class="bleed"><img src="img/dz-final.jpg" alt="The pavilion at dusk: timber ribs and a pale membrane rising in two domes against Ulaanbaatar’s skyline" width="1278" height="691"></figure>
 
   <div class="p-body">
     <div class="p-copy">
@@ -138,24 +163,25 @@
   </div>
 
   <div class="gallery">
-    <div class="g g-12 g-stack">
-    <figure><img src="img/dz-land.jpg" alt="Photographs of the Mongolian steppe, a ger, grazing herds and a herder on horseback" width="1732" height="274" loading="lazy"><figcaption>Vast landscapes, nomadic life, pasture</figcaption></figure>
-    <p class="g-text">Mongolia is a land of vast landscapes and nomadic traditions, where life is shaped by movement, the seasons and a close relationship with the land. The ger is how that life is housed: demountable, light and adaptable, it shelters people through extreme cold while keeping them connected to the landscape. That principle of adaptation is where the pavilion begins.</p>
-    </div>
+    <figure class="g g-3"><img src="img/dz-land-1.jpg" alt="Wide Mongolian steppe below blue mountains" width="405" height="267" loading="lazy"><figcaption>Vast landscapes</figcaption></figure>
+    <figure class="g g-3"><img src="img/dz-land-2.jpg" alt="A ger below a snow-capped mountain" width="406" height="267" loading="lazy"><figcaption>Nomadic life</figcaption></figure>
+    <figure class="g g-3"><img src="img/dz-land-3.jpg" alt="Sheep and goats grazing on open grassland" width="406" height="268" loading="lazy"><figcaption>Pasture</figcaption></figure>
+    <figure class="g g-3"><img src="img/dz-land-4.jpg" alt="A herder on horseback driving goats through snow" width="404" height="267" loading="lazy"><figcaption>Extreme climate</figcaption></figure>
+    <p class="g g-12 g-text">Mongolia is a land of vast landscapes and nomadic traditions, where life is shaped by movement, the seasons and a close relationship with the land. The ger is how that life is housed: demountable, light and adaptable, it shelters people through extreme cold while keeping them connected to the landscape. That principle of adaptation is where the pavilion begins.</p>
   </div>
 
   <ol class="zones" aria-label="The four zones of the walk">
-    <li style="--len:5"><span class="z-len">5 m</span><strong>Access</strong>Widely spaced ribs keep the ground, sky and steppe in view. The pasture is open.</li>
-    <li style="--len:5"><span class="z-len">5 m</span><strong>Loss</strong>The ribs close in and a translucent layer covers the ground. You can still see the land, but you can’t reach it.</li>
-    <li style="--len:5"><span class="z-len">5 m</span><strong>Isolation</strong>A dark, compressed passage that carries the weight of the condition.</li>
-    <li style="--len:9"><span class="z-len">9 m</span><strong>Adapt</strong>A protected dome like a ger. The toono brings in light and sky before the pavilion opens back to the landscape.</li>
+    <li style="--len:5"><img src="img/dz-seq-5.jpg" alt="Open timber ribs over a boardwalk through snowy grass" width="442" height="501" loading="lazy"><strong>Access</strong><span class="z-len">5 m</span><span class="z-text">Widely spaced ribs keep the ground, sky and steppe in view. The pasture is open.</span></li>
+    <li style="--len:5"><img src="img/dz-seq-4.jpg" alt="Pasture visible under a sheet of ice inside the pavilion" width="442" height="170" loading="lazy"><strong>Loss</strong><span class="z-len">5 m</span><span class="z-text">The ribs close in and a translucent layer covers the ground. You can still see the land, but you can’t reach it.</span></li>
+    <li style="--len:5"><img src="img/dz-seq-3.jpg" alt="A dark, narrow tunnel of closely spaced ribs" width="442" height="435" loading="lazy"><strong>Isolation</strong><span class="z-len">5 m</span><span class="z-text">A dark, compressed passage that carries the weight of the condition.</span></li>
+    <li style="--len:9"><img src="img/dz-seq-2.jpg" alt="The domed hall lit from the toono opening above" width="442" height="309" loading="lazy"><strong>Adapt</strong><span class="z-len">9 m</span><span class="z-text">A protected dome like a ger. The toono brings in light and sky before the pavilion opens back to the landscape.</span></li>
   </ol>
 
   <div class="gallery">
-    <figure class="g g-8 g-paper"><img src="img/dz-sketch.jpg" alt="Watercolour sketch of the ribbed pavilion in elevation and plan" width="1801" height="754" loading="lazy"><figcaption>Form exploration</figcaption></figure>
-    <figure class="g g-4 g-paper"><img src="img/dz-sk3.jpg" alt="Three pencil sketches of the pavilion’s profile" width="828" height="786" loading="lazy"></figure>
-    <figure class="g g-6 g-paper"><img src="img/dz-sk1.jpg" alt="Annotated elevation sketch" width="1080" height="404" loading="lazy"></figure>
-    <figure class="g g-6 g-paper"><img src="img/dz-sk2.jpg" alt="Perspective sketch of visitors entering under the ribs" width="1082" height="401" loading="lazy"></figure>
+    <figure class="g g-8"><img src="img/dz-sketch.jpg" alt="Watercolour sketch of the ribbed pavilion in elevation and plan" width="1801" height="754" loading="lazy"><figcaption>Form exploration</figcaption></figure>
+    <figure class="g g-4"><img src="img/dz-sk3.jpg" alt="Three pencil sketches of the pavilion’s profile" width="828" height="786" loading="lazy"></figure>
+    <figure class="g g-6"><img src="img/dz-sk1.jpg" alt="Annotated elevation sketch" width="1080" height="404" loading="lazy"></figure>
+    <figure class="g g-6"><img src="img/dz-sk2.jpg" alt="Perspective sketch of visitors entering under the ribs" width="1082" height="401" loading="lazy"></figure>
   </div>
 
   <blockquote class="pull">
@@ -163,23 +189,28 @@
   </blockquote>
 
   <div class="gallery">
-    <figure class="g g-6 g-paper"><img src="img/dz-plan.jpg" alt="Dimensioned ground plan, two linked ovals" width="2001" height="1192" loading="lazy"><figcaption>Ground plan</figcaption></figure>
-    <figure class="g g-6 g-paper"><img src="img/dz-circ.jpg" alt="Circulation diagram with arrows through the pavilion" width="2001" height="1174" loading="lazy"><figcaption>Circulation</figcaption></figure>
-    <figure class="g g-6 g-paper"><img src="img/dz-sect.jpg" alt="Long section through the pavilion" width="1078" height="372" loading="lazy"><figcaption>Section</figcaption></figure>
-    <figure class="g g-6 g-paper"><img src="img/dz-elev.jpg" alt="Elevation of the dome with its entrance" width="2001" height="704" loading="lazy"><figcaption>Elevation</figcaption></figure>
-    <figure class="g g-3"><img src="img/dz-seq.jpg" alt="Five interior views, from the open entrance to the dark passage to the lit dome" width="448" height="1760" loading="lazy"><figcaption>Walking through, end to start</figcaption></figure>
-    <div class="g g-9 g-stack">
-    <figure class="g-dark"><img src="img/dz-mat.jpg" alt="Exploded axonometric: membrane, polycarbonate, purlins, timber ribs and foundations" width="1719" height="949" loading="lazy"><figcaption>Materiality: outer membrane, translucent polycarbonate, timber purlins, glulam ribs, bolted steel joints and screw piles</figcaption></figure>
-    <p class="p-close">When access is lost, adaptation becomes a way forward.</p>
-    </div>
+    <figure class="g g-6"><img src="img/dz-plan.jpg" alt="Dimensioned ground plan, two linked ovals" width="2001" height="1192" loading="lazy"><figcaption>Ground plan</figcaption></figure>
+    <figure class="g g-6"><img src="img/dz-circ.jpg" alt="Circulation diagram with arrows through the pavilion" width="2001" height="1174" loading="lazy"><figcaption>Circulation</figcaption></figure>
+    <figure class="g g-6"><img src="img/dz-sect.jpg" alt="Long section through the pavilion" width="1078" height="372" loading="lazy"><figcaption>Section</figcaption></figure>
+    <figure class="g g-6"><img src="img/dz-elev.jpg" alt="Elevation of the dome with its entrance" width="2001" height="704" loading="lazy"><figcaption>Elevation</figcaption></figure>
+    <figure class="g g-8"><img src="img/dz-mat.jpg" alt="Exploded axonometric: membrane, polycarbonate, purlins, timber ribs and foundations" width="1719" height="949" loading="lazy"><figcaption>Materiality: outer membrane, translucent polycarbonate, timber purlins, glulam ribs, bolted steel joints and screw piles</figcaption></figure>
+    <figure class="g g-4"><img src="img/dz-seq-1.jpg" alt="The ribs open out to the snowy landscape at sunset" width="442" height="291" loading="lazy"><figcaption>Continuation: the pavilion opens back to the landscape</figcaption></figure>
   </div>
+
+  <p class="p-close">When access is lost, adaptation becomes a way forward.</p>
+
+  <nav class="p-next" aria-label="More projects">
+    <a href="#work">All projects</a>
+    <a class="p-next-link" href="#workspace"><span>Next project</span>Workspace</a>
+  </nav>
 </section>
 
 <!-- ============ WORKSPACE ============ -->
 <section class="project" id="workspace" data-room="sage">
+  <a class="p-back" href="#work">All projects</a>
   <header class="p-head">
     <p class="p-kind">Study room, spatial planning</p>
-    <h2 class="p-title">Workspace</h2>
+    <h2 class="p-title" tabindex="-1">Workspace</h2>
   </header>
 
   <div class="p-body">
@@ -195,14 +226,15 @@
   </div>
 
   <div class="gallery">
-    <figure class="g g-12"><img src="img/ws-render.jpg" alt="Study room render: a desk under lit shelving, a mustard chair, a beanbag and tall white wardrobes" width="1244" height="698" loading="lazy"></figure>
-    <figure class="g g-4 g-paper"><img src="img/ws-plan.jpg" alt="Floor plan of the study room" width="1626" height="2001" loading="lazy"><figcaption>Floor plan</figcaption></figure>
-    <figure class="g g-4 g-paper"><img src="img/ws-sect.jpg" alt="Front, back, right and left sectional elevations" width="2001" height="1736" loading="lazy"><figcaption>Sectional elevations</figcaption></figure>
-    <figure class="g g-4 g-paper"><img src="img/ws-2d.jpg" alt="Four coloured elevations in sage green and white" width="1067" height="1046" loading="lazy"><figcaption>2D renders</figcaption></figure>
-    <figure class="g g-7"><img src="img/ws-mood.jpg" alt="Moodboard: sage walls, a mushroom lamp, trailing plants and a boucle chair" width="1465" height="1312" loading="lazy"><figcaption>Moodboard</figcaption></figure>
+    <figure class="g g-12"><img src="img/ws-render.jpg" alt="Study room render: a desk under lit shelving, a mustard chair, a beanbag and tall white wardrobes" width="1241" height="696" loading="lazy"></figure>
+    <figure class="g g-4"><img src="img/ws-plan.jpg" alt="Floor plan of the study room" width="1626" height="2001" loading="lazy"><figcaption>Floor plan</figcaption></figure>
+    <figure class="g g-4"><img src="img/ws-sect.jpg" alt="Front, back, right and left sectional elevations" width="2001" height="1736" loading="lazy"><figcaption>Sectional elevations</figcaption></figure>
+    <figure class="g g-4"><img src="img/ws-2d.jpg" alt="Four coloured elevations in sage green and white" width="1112" height="1093" loading="lazy"><figcaption>2D renders</figcaption></figure>
+    <figure class="g g-7"><img src="img/ws-mood.jpg" alt="Moodboard: sage walls, a mushroom lamp, trailing plants and a boucle chair" width="1462" height="1309" loading="lazy"><figcaption>Moodboard</figcaption></figure>
     <div class="g g-5 g-stack">
-      <figure class="g-paper"><img src="img/ws-mat.jpg" alt="Material samples: laminate, wood, fluted panel, stone, fabric and sheer" width="1343" height="339" loading="lazy"><figcaption>Material palette</figcaption></figure>
-      <div class="swatches swatches--tight" aria-label="Workspace palette">
+      <figure><img src="img/ws-mat.jpg" alt="Material samples: laminate, wood, fluted panel, stone, fabric and sheer" width="1447" height="440" loading="lazy"><figcaption>Material palette</figcaption></figure>
+      <div class="swatches" aria-label="Workspace palette">
+        <p class="swatch-head">Colour palette</p>
         <ul>
           <li style="--c:#ece0d1">Off white</li>
           <li style="--c:#dac9b1">Beige</li>
@@ -213,13 +245,19 @@
       </div>
     </div>
   </div>
+
+  <nav class="p-next" aria-label="More projects">
+    <a href="#work">All projects</a>
+    <a class="p-next-link" href="#crossy"><span>Next project</span>Crossy Light</a>
+  </nav>
 </section>
 
 <!-- ============ CROSSY LIGHT ============ -->
 <section class="project" id="crossy" data-room="cobalt">
+  <a class="p-back" href="#work">All projects</a>
   <header class="p-head">
     <p class="p-kind">Lighting object, PVC and joinery</p>
-    <h2 class="p-title">Crossy Light</h2>
+    <h2 class="p-title" tabindex="-1">Crossy Light</h2>
   </header>
 
   <div class="p-body">
@@ -235,23 +273,29 @@
   </div>
 
   <div class="gallery">
-    <figure class="g g-5"><img src="img/cl-2.jpg" alt="The finished blue chandelier hanging above a plinth" width="1051" height="1750" loading="lazy"><figcaption>On display</figcaption></figure>
-    <figure class="g g-5"><img src="img/cl-1.jpg" alt="Close render of the PVC arms with lights at their ends" width="964" height="1682" loading="lazy"></figure>
+    <figure class="g g-5"><img src="img/cl-2.jpg" alt="The finished blue chandelier hanging above a plinth" width="1049" height="1748" loading="lazy"><figcaption>On display</figcaption></figure>
+    <figure class="g g-5"><img src="img/cl-1.jpg" alt="Close render of the PVC arms with lights at their ends" width="962" height="1680" loading="lazy"></figure>
     <div class="g g-2 g-note"><p>A repeated system, a crossed geometry. Straight PVC sections of different lengths and directions meet through the same repeated joint.</p></div>
-    <figure class="g g-8 g-paper"><img src="img/cl-sketch.jpg" alt="Sheet of pencil sketches exploring crossed pipe forms" width="1801" height="981" loading="lazy"><figcaption>Sketch development</figcaption></figure>
-    <figure class="g g-4 g-paper"><img src="img/cl-join.jpg" alt="Exploded view of a pipe joint with a long bolt" width="594" height="846" loading="lazy"><figcaption>The joinery: each section bolts to the next</figcaption></figure>
-    <figure class="g g-6 g-paper"><img src="img/cl-d1.jpg" alt="Line drawing of the chandelier in perspective" width="825" height="810" loading="lazy"></figure>
-    <figure class="g g-6 g-paper"><img src="img/cl-d2.jpg" alt="Dimensioned plan of the crossed arms" width="994" height="901" loading="lazy"><figcaption>Plan of the crossed arms</figcaption></figure>
+    <figure class="g g-8"><img src="img/cl-sketch.jpg" alt="Sheet of pencil sketches exploring crossed pipe forms" width="1890" height="1118" loading="lazy"><figcaption>Sketch development</figcaption></figure>
+    <figure class="g g-4"><img src="img/cl-join.jpg" alt="Exploded view of a pipe joint with a long bolt" width="586" height="803" loading="lazy"><figcaption>The joinery: each section bolts to the next</figcaption></figure>
+    <figure class="g g-6"><img src="img/cl-d1.jpg" alt="Line drawing of the chandelier in perspective" width="874" height="838" loading="lazy"></figure>
+    <figure class="g g-6"><img src="img/cl-d2.jpg" alt="Dimensioned plan of the crossed arms" width="1003" height="734" loading="lazy"><figcaption>Plan of the crossed arms</figcaption></figure>
     <figure class="g g-7"><img src="img/cl-mock.jpg" alt="A grey PVC mock-up of the structure being assembled on a studio table" width="1600" height="1200" loading="lazy"><figcaption>Mock-up</figcaption></figure>
     <figure class="g g-5"><img src="img/cl-laid.jpg" alt="Blue PVC sections laid out on board with the light fittings, being wired" width="1200" height="1600" loading="lazy"><figcaption>Build process: laying out and wiring the final sections</figcaption></figure>
   </div>
+
+  <nav class="p-next" aria-label="More projects">
+    <a href="#work">All projects</a>
+    <a class="p-next-link" href="#meld"><span>Next project</span>Meld</a>
+  </nav>
 </section>
 
 <!-- ============ MELD ============ -->
 <section class="project" id="meld" data-room="walnut">
+  <a class="p-back" href="#work">All projects</a>
   <header class="p-head">
     <p class="p-kind">Flat-pack stool, furniture design</p>
-    <h2 class="p-title">Meld</h2>
+    <h2 class="p-title" tabindex="-1">Meld</h2>
   </header>
 
   <div class="p-body">
@@ -267,22 +311,33 @@
   </div>
 
   <div class="gallery">
-    <figure class="g g-8 g-paper"><img src="img/ml-expl.jpg" alt="Exploded renders of the stool components" width="1700" height="697" loading="lazy"><figcaption>Exploded view</figcaption></figure>
+    <figure class="g g-8"><img src="img/ml-expl.jpg" alt="Exploded renders of the stool components" width="1669" height="744" loading="lazy"><figcaption>Exploded view</figcaption></figure>
     <figure class="g g-4 g-bottom g-small"><img src="img/ml-box.jpg" alt="Kraft flat-pack box printed with ‘Meld, portable stool, flat pack’" width="1722" height="884" loading="lazy"><figcaption>Packed flat</figcaption></figure>
-    <figure class="g g-7 g-paper"><img src="img/ml-meas.jpg" alt="Dimensioned CAD drawings of the leg and connector" width="1801" height="1130" loading="lazy"><figcaption>Dimensions and details for the fit of each part</figcaption></figure>
-    <figure class="g g-5 g-paper"><img src="img/ml-asm.jpg" alt="The assembled stool photographed from four angles" width="1667" height="1873" loading="lazy"><figcaption>The finished stool, from four sides. It was load-tested and held a person’s weight.</figcaption></figure>
+    <figure class="g g-7"><img src="img/ml-meas.jpg" alt="Dimensioned CAD drawings of the leg and connector" width="1945" height="1272" loading="lazy"><figcaption>Dimensions and details for the fit of each part</figcaption></figure>
+    <figure class="g g-5 quad">
+      <img src="img/ml-asm-1.jpg" alt="The assembled stool, three-quarter view" width="889" height="926" loading="lazy">
+      <img src="img/ml-asm-2.jpg" alt="The assembled stool, front view" width="889" height="909" loading="lazy">
+      <img src="img/ml-asm-3.jpg" alt="The assembled stool, from above" width="741" height="926" loading="lazy">
+      <img src="img/ml-asm-4.jpg" alt="The assembled stool, side view" width="741" height="909" loading="lazy">
+      <figcaption>The finished stool, from four sides. It was load-tested and held a person’s weight.</figcaption>
+    </figure>
   </div>
+
+  <nav class="p-next" aria-label="More projects">
+    <a href="#work">All projects</a>
+    <a class="p-next-link" href="#a-home"><span>Back to the first project</span>A Home, Reconsidered</a>
+  </nav>
 </section>
 
 <!-- ============ ABOUT ============ -->
-<section class="about" id="about" data-room="limestone">
+<section class="about home-only" id="about" data-room="limestone">
   <h2 class="s-title">About</h2>
   <div class="about-grid">
     <div class="about-text">
       <p class="p-lede">My approach is rooted in minimalism, with an emphasis on simplicity, clarity and function.</p>
       <p>I’m interested in how a few considered decisions about form, material and light change the way a room feels, and in making spaces that are purposeful and calm. I’m in my B.Des at The Design Village and work across interiors, furniture, lighting and small structures.</p>
     </div>
-    <dl class="facts facts--about">
+    <dl class="facts">
       <div><dt>Education</dt><dd>B.Des, Space &amp; Interior Design<br>The Design Village, Noida, 2024 to present</dd></div>
       <div><dt>School</dt><dd>St. Theresa’s Convent Sr. Sec. School, 2024</dd></div>
       <div><dt>Software</dt><dd>AutoCAD, Rhino 3D, V-Ray, SketchUp, Adobe Photoshop, Canva</dd></div>
@@ -309,7 +364,6 @@
 
 <dialog class="lightbox" aria-label="Image viewer">
   <form method="dialog"><button class="lb-close" aria-label="Close">Close</button></form>
-  <img alt="">
   <p class="lb-cap"></p>
 </dialog>
 
