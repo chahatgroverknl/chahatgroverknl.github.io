@@ -331,4 +331,24 @@ figcaption { font-size: 13px; line-height: 1.4; padding-top: 8px; color: var(--m
 .js .project.is-open { padding-top: clamp(20px, 3vw, 40px); }
 .card img.on-white { object-fit: contain; background: #fff; }
 /* small source image: show near its real size so it isn't blown up */
-.native img { max-width: 360px; }
+.native img { max-width: 412px; }
+
+/* room palettes: colour, material, fixtures */
+.palettes {
+  display: flex; flex-wrap: wrap; gap: clamp(24px, 3vw, 56px);
+  align-items: flex-start; margin-top: clamp(20px, 2.5vw, 32px);
+}
+.pal { flex: 0 0 auto; }
+.pal-fix { flex: 1 1 220px; }
+.pal-head { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+.swatches-row, .materials { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; max-width: 100%; }
+.swatches-row li, .materials li { width: 64px; font-size: 12px; line-height: 1.3; }
+.swatches-row li::before {
+  content: ""; display: block; width: 56px; height: 56px; border-radius: 50%; margin-bottom: 6px;
+  background: var(--c); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--fg) 14%, transparent);
+}
+.materials img { width: 56px; height: 56px; object-fit: cover; margin-bottom: 6px; }
+.pal-fix img { width: 100%; max-width: 280px; height: auto; }
+.pal-cell .palettes { margin-top: 0; flex-direction: column; }
+.pal-cell .pal-fix { flex: none; }
+.plan-sm img { max-width: 230px; }
