@@ -330,3 +330,5 @@ figcaption { font-size: 13px; line-height: 1.4; padding-top: 8px; color: var(--m
 .p-next-link:hover { font-variation-settings: "wdth" 125; }
 .js .project.is-open { padding-top: clamp(20px, 3vw, 40px); }
 .card img.on-white { object-fit: contain; background: #fff; }
+/* small source image: show near its real size so it isn't blown up */
+.native img { max-width: 360px; }
